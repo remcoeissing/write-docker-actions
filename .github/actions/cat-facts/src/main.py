@@ -3,18 +3,19 @@ import random
 import sys
 
 # Make an HTTP GET request to the cat-fact API
-cat_url = "https://cat-fact.herokuapp.com/facts"
-r = requests.get(cat_url)
-r_obj_list = r.json()
+# cat_url = "https://cat-fact.herokuapp.com/facts"
+# r = requests.get(cat_url)
+# r_obj_list = r.json()
 
 # Create an empty list to store individual facts in
 # This will make it easy to select a random one later
 fact_list = []
 
 # Add the "text" of every object into the fact_list list
-for fact in r_obj_list:
-    fact_list.append(fact["text"])
-
+# for fact in r_obj_list:
+#     fact_list.append(fact["text"])
+fact_list.append("Fact about cats is that dogs are more fun")
+fact_list.append("Go get a dog.")
 # Select a random fact from the fact_list and return it
 # into a variable named random_fact so we can use it
 def select_random_fact(fact_arr):
